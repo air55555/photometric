@@ -4,7 +4,6 @@ Scalable, Detailed and Mask-free Universal Photometric Stereo Network (CVPR2023)
 # All rights reserved.
 """
 
-
 import torch
 import torch.nn.functional as F
 import numpy as np
