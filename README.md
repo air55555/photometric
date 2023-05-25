@@ -1,3 +1,14 @@
+[AR] 
+1.Install Python 3.11.3,install dependancies from requirements.txt.
+2. install cupy pip3 --default-timeout=1000 install cupy-cuda11x -f https://pip.cupy.dev/aar
+ch64
+3.run 
+python.exe ./sdm_unips/main.py --session_name results\38_small --test_dir .\data\38_case_bottom\ --checkpoint .\checkpoint\ --max_image_num 100 
+to generate png normal map
+4.run 
+python.exe bilateral_normal_integration_cupy.py --path results/38_small/results/A.data/ -k 2 --iter 100
+to generate .ply mesh file
+
 
 ## SDM-UniPS: Scalable, Detailed, and Mask-Free Universal Photometric Stereo (CVPR2023 Highlight)
 
