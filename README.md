@@ -1,6 +1,7 @@
 [AR] 
 
-1.Install Python 3.11.3,install dependancies from requirements.txt, 
+1.Install Python 3.11.3,install dependencies from requirements.txt,
+instal pytorch "pip3 install torch-2.0.1+cu118-cp311-cp311-win_amd64.whl"
 download checkpoints https://www.dropbox.com/s/yu8h6g0zp07mumd/checkpoint.zip?dl=0
 
 2. install cupy pip3 --default-timeout=1000 install cupy-cuda11x -f https://pip.cupy.dev/aarch64
