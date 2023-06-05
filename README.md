@@ -8,11 +8,12 @@ download checkpoints https://www.dropbox.com/s/yu8h6g0zp07mumd/checkpoint.zip?dl
 
 3.run 
 python.exe ./sdm_unips/main.py --session_name results\38_small --test_dir .\data\38_case_bottom\ --checkpoint .\checkpoint\ --max_image_num 100 
-to generate png normal map
+to generate png normal map. mask file is optional 
 4.run 
 python.exe bilateral_normal_integration_cupy.py --path results/38_small/results/A.data/ -k 2 --iter 100
 to generate .ply mesh file . ply will be in  results/38_small/results/A.data/
-
+mask file is optional 
+For details about mesh options watch https://github.com/xucao-42/bilateral_normal_integration 
 
 ## SDM-UniPS: Scalable, Detailed, and Mask-Free Universal Photometric Stereo (CVPR2023 Highlight)
 
